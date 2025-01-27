@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.dashboard-container {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+form button {
+    background: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    position: relative;
+    z-index: 2;
+}
+/* dashboard.css */
+.dashboard-container {
+    position: relative;  /* Ensure it's not blocking clicks */
+    z-index: 1;          /* Make sure it's above any overlays */
+    padding: 20px;
+    background: white;
+    max-width: 600px;
+    margin: 50px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}

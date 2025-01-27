@@ -1,0 +1,61 @@
+/* users.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures full-screen height */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 5px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 60%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    z-index: 2; /* Fixes click issue */
+    position: relative;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border: 2px solid #2c3e50;
+}
+
+.user-box {
+    border: 1px solid #2c3e50;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    transition: transform 0.2s ease-in-out;
+}
+
+.user-box:hover {
+    transform: scale(1.03);
+}
+
+p {
+    font-size: 1.2rem;
+    color: #34495e;
+}
